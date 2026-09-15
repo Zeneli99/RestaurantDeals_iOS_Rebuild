@@ -22,12 +22,23 @@ jobs:
         working-directory: RestaurantDeals_iOS_Rebuild
         run: |
           set -euo pipefail
-          xcodebuild             -project RestaurantDeals.xcodeproj             -scheme RestaurantDeals             -configuration Release             -sdk iphoneos             -derivedDataPath build             CODE_SIGNING_ALLOWED=NO             CODE_SIGNING_REQUIRED=NO             CODE_SIGN_IDENTITY=""             build
+
+          xcodebuild \
+            -project RestaurantDeals.xcodeproj \
+            -scheme RestaurantDeals \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build
 
       - name: Package unsigned IPA
         working-directory: RestaurantDeals_iOS_Rebuild
         run: |
           set -euo pipefail
+
           APP="build/Build/Products/Release-iphoneos/RestaurantDeals.app"
 
           test -d "$APP"
@@ -37,7 +48,11 @@ jobs:
           mkdir Payload
           cp -R "$APP" Payload/
 
-          COPYFILE_DISABLE=1 zip -qry             RestaurantDeals-unsigned.ipa             Payload             -x '*/._*'             -x '__MACOSX/*'
+          COPYFILE_DISABLE=1 zip -qry \
+            RestaurantDeals-unsigned.ipa \
+            Payload \
+            -x '*/._*' \
+            -x '__MACOSX/*'
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
