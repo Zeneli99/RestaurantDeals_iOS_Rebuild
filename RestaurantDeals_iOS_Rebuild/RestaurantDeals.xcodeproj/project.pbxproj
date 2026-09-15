@@ -1,0 +1,94 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0010001 /* RestaurantDealsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020001; };
+		A0010002 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020002; };
+		A0010003 /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020003; };
+		A0010004 /* BackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020004; };
+		A0010005 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020005; };
+		A0010006 /* WebContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020006; };
+		A0010007 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0020007; };
+		A0010008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0020008; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A0020001 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDealsApp.swift; sourceTree = "<group>"; };
+		A0020002 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A0020003 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
+		A0020004 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendClient.swift; sourceTree = "<group>"; };
+		A0020005 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		A0020006 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContainer.swift; sourceTree = "<group>"; };
+		A0020007 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A0020008 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0020009 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0020010 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantDeals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0030001 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0040001 = {isa = PBXGroup; children = (A0040002, A0040003); sourceTree = "<group>"; };
+		A0040002 = {isa = PBXGroup; children = (A0020001,A0020002,A0020003,A0020004,A0020005,A0020006,A0020007,A0020008,A0020009); path = RestaurantDeals; sourceTree = "<group>"; };
+		A0040003 = {isa = PBXGroup; children = (A0020010); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0050001 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0090002;
+			buildPhases = (A0060001, A0030001, A0070001);
+			buildRules = ();
+			dependencies = ();
+			name = RestaurantDeals;
+			productName = RestaurantDeals;
+			productReference = A0020010;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0080001 = {
+			isa = PBXProject;
+			attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600; TargetAttributes = {A0050001 = {CreatedOnToolsVersion = 16.0; };};};
+			buildConfigurationList = A0090001;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = A0040001;
+			productRefGroup = A0040003;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (A0050001);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0070001 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A0010008); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0060001 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A0010001,A0010002,A0010003,A0010004,A0010005,A0010006,A0010007); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A0100001 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_STRICT_OBJC_MSGSEND = YES; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 18.2; SDKROOT = iphoneos; SWIFT_VERSION = 5.0;}; name = Debug;};
+		A0100002 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = YES; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 18.2; SDKROOT = iphoneos; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_VERSION = 5.0; VALIDATE_PRODUCT = YES;}; name = Release;};
+		A0100003 = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 2001; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = RestaurantDeals/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 18.2; MARKETING_VERSION = 2.0; PRODUCT_BUNDLE_IDENTIFIER = deals.restaurant.avens.avens.avens; PRODUCT_NAME = RestaurantDeals; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2";}; name = Debug;};
+		A0100004 = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 2001; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = RestaurantDeals/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 18.2; MARKETING_VERSION = 2.0; PRODUCT_BUNDLE_IDENTIFIER = deals.restaurant.avens.avens.avens; PRODUCT_NAME = RestaurantDeals; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2";}; name = Release;};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0090001 = {isa = XCConfigurationList; buildConfigurations = (A0100001,A0100002); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+		A0090002 = {isa = XCConfigurationList; buildConfigurations = (A0100003,A0100004); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0080001;
+}
